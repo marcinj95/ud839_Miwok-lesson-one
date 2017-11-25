@@ -24,6 +24,12 @@ public class NumbersFragment extends Fragment {
         wordAdapter.stopMusic();
     }
 
+    @Override
+    public void onPause() {
+        super.onPause();
+        wordAdapter.stopMusic();
+    }
+
     public NumbersFragment() {
         // Required empty public constructor
     }

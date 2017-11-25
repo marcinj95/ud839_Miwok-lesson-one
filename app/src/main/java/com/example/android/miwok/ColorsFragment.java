@@ -24,6 +24,12 @@ public class ColorsFragment extends Fragment {
         wordAdapter.stopMusic();
     }
 
+    @Override
+    public void onPause() {
+        super.onPause();
+        wordAdapter.stopMusic();
+    }
+
     public ColorsFragment() {
         // Required empty public constructor
     }

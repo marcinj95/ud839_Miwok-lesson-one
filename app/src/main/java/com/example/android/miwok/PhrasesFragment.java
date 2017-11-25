@@ -23,6 +23,12 @@ public class PhrasesFragment extends Fragment {
         wordAdapter.stopMusic();
     }
 
+    @Override
+    public void onPause() {
+        super.onPause();
+        wordAdapter.stopMusic();
+    }
+
     public PhrasesFragment() {
         // Required empty public constructor
     }
